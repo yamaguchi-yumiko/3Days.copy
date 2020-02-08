@@ -2,192 +2,288 @@
 <html lang="ja">
 
   <head>
-    <meta charset="utf-8">
-    <title>模写サイト1</title>
+    <meta charset="UTF-8">
+    <title>模写サイト２</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex,nofollow">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="模写作品">
+    <meta name="description" content="XDのデザインカンプから模写コーディング">
     <meta name="keywords" content="/">
-    <link rel="icon" href="img/logo.png" sizes="20x20" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="" sizes="16x16" type="image/png">
+    <link rel="stylesheet" href="common/css/style.css">
   </head>
 
   <body>
     <header class="header">
-      <!-- ナビゲージョン -->
-      <nav class="nav">
-        <a href="#"><img src="img/logo 1.png"></a>
-        <div class="main-nav">
-          <ul>
-            <li><a href="">トップページ</a></li>
-            <li><a href="">松風屋のこだわり</a></li>
-            <li><a href="">あんどーなつ</a></li>
-            <li><a href="">商品のご紹介</a></li>
-            <li><a href="">会社概要</a></li>
-            <li><a href="" style="border-bottom: 4px solid #c7b576;">ご注文・お問い合わせ</a></li>
-          </ul>
-        </div>
-
-        <a id="menu">
-          <span class="menu__line menu__line--top"></span>
-          <span class="menu__line menu__line--center"></span>
-          <span class="menu__line menu__line--bottom"></span>
-          　</a>
-        <div class="gnav">
-          <div class="wrapper">
-            <ul class="gnav__menu">
-              <li class="gnav__menu__item"><a href="">トップページ</a></li>
-              <li class="gnav__menu__item"><a href="">松風屋のこだわり</a></li>
-              <li class="gnav__menu__item"><a href="">あんどーなつ</a></li>
-              <li class="gnav__menu__item"><a href="">商品のご紹介</a></li>
-              <li class="gnav__menu__item"><a href="">店舗情報</a></li>
-              <li class="gnav__menu__item"><a href="">会社概要</a></li>
-              <li class="gnav__menu__item"><a href="">ご注文・お問い合わせ</a></li>
+      <div class="header-nav">
+        <p><img src="common/img/logo1.png" alt=""></p>
+        <nav class="nav">
+          <div class="nav-list">
+            <ul>
+              <li><a href="#Card">Card</a></li>
+              <li><a href="#News">News</a></li>
+              <li><a href="#price">price</a></li>
+              <li><a href="#Access">Access</a></li>
+              <li><a href="#Contact">Contact</a></li>
             </ul>
           </div>
-          　　
-        </div>
-      </nav>
+
+          <div class="nav-button">
+            <input id="modal-checkbox" type="checkbox">
+            <label id="modal-open" for="modal-checkbox">
+              <a class="menu">
+                <span class="menu__line menu__line--top"></span>
+                <span class="menu__line menu__line--center"></span>
+                <span class="menu__line menu__line--bottom"></span>
+                　</a> </label>
+            <label id="modal-close" for="modal-checkbox"></label>
+            <div id="modal-content">
+
+              <p><a href="#Card">Card</a></p>
+              <p><a href="#News">News</a></p>
+              <p><a href="#price">price</a></p>
+              <p><a href="#Access">Access</a></p>
+              <p><a href="#Contact">Contact</a></p>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="wrap">
+        <h1>一番伝えたいことを書く</h1>
+        　<p>リードリードリード</p>
+        　　　<p class="button"><a href="#">お問い合わせ</a></p>
+      </div>
     </header>
-    <main>
-      <section class="home">
-        <!-- トップイメージ -->
-        <h1><img src="img/logo.png" alt="松風屋"></h1>
+    <main class="main">
+      <section class="card" id="Card">
+        <h2>Caed</h2>
+        <div class="group">
+          <article class="content">
+            <p><img src="common/img/card-img.svg" alt=""></p>
+            <h3>タイトルタイトル</h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </article>
+          <article class="content">
+            <p><img src="common/img/card-img.svg" alt=""></p>
+            <h3>タイトルタイトル</h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </article>
+          <article class="content">
+            <p><img src="common/img/card-img.svg" alt=""></p>
+            <h3>タイトルタイトル</h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </article>
+          <article class="content">
+            <p><img src="common/img/card-img.svg" alt=""></p>
+            <h3>タイトルタイトル</h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </article>
+          <article class="content">
+            <p><img src="common/img/card-img.svg" alt=""></p>
+            <h3>タイトルタイトル</h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </article>
+          <article class="content">
+            <p><img src="common/img/card-img.svg" alt=""></p>
+            <h3>タイトルタイトル</h3>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+          </article>
+        </div>
       </section>
-      <article>
-        <section class="description">
-          <!-- 概要 -->
-          <h2> 和菓子処松風のこだわり</h2>
-          <p>当社は、大正10年に創業した約100年の歴史を持つ和菓子屋です。<br>初代社長、佐々木市郎は俳聖松尾芭蕉を敬愛しており、「奥の細道
-            芭蕉最中」など芭蕉にゆかりのある菓子を作り続けていました。<br>松尾芭蕉が奥の細道の旅の間に見出した概念に「不易流行」というものがあります。<br>これは、いつまでも変化しない本質的なものを忘れない中にも新しい変化を取り入れていくということです。<br>当社はこの言葉を経営理念とし、昔からの伝統を守りつつ、時代の流れや新しい変化を取り入れ、常により良い菓子を探求し続けています。</p>
-          　　
-          <div class="feature">
-            <p><img src="img/name.png"></p>
-            <p>株式会社松風屋三代目&nbsp;&nbsp;&nbsp;佐々木啓仁</p>
-            <p class="buttun"><a href="#" class="btn">詳しく見る</a></p>
-          </div>
-        </section>
-        <section class="detail">
-          <!-- 詳細-->
-          <div class="wrap">
-            <h3>和菓子職人が丹精込めて作った<br>昔なつかし<span>あんどーなつ</span></h3>
-            　　　　
-            <p class="wrap-secondary">繊細な味覚を持つ和菓子職人が丹精込めて作ったら、上品な甘さの特別なあんどーなつができました。<br>こだわりの食材を職人んの技で仕上げた松風屋のあんどーなつをぜひご賞味ください。</p>
-            <p class="buttun"><a href="#" class="btn">詳しく見る</a></p>
-          </div>
-        </section>
-        <section class="product">
-          <!-- 商品説明 -->
-          <div class="introduction">
-            <h2>商品のご紹介</h2>
-            <p>素材の良さを生かしながら、熟練の技でひとつひとつ、まごころ込めて手作りしています。</p>
-          </div>
-          <ul class="product-item">
-            <li><img src="img/ic_products1.jpg"></li>
-            <li><img src="img/ic_products2.jpg"></li>
-            <li><img src="img/ic_products3.jpg"></li>
-            <li class="product-item-hide"><img src="img/ic_products4.jpg"></li>
-            <li><img src="img/ic_products5.jpg"></li>
+
+      <section class="news" id="News">
+        <h2>News</h2>
+        <div class="contents">
+          <ul>
+            <li>2019-01-30</li>
+            <li class="td-gray"><a href="#">ラベル1</a></li>
+            <li>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</li>
           </ul>
-          <p class="buttun"><a href="#" class="btn">商品一覧</a></p>
-        </section>
-      </article>
-      <article class="news">
-        <!-- ニュース -->
-        <section class="announce">
-          <h2>お知らせ</h2>
-        </section>
-        <section class="facebook">
-          <p class="buttun"><a href="#" class="btn">Facebook</a></p>
-        </section>
-        <section class="contact">
-          <!-- 問合せ -->
-          <h2>商品のご注文・お問い合わせ</h2>
-          <p class="contact-container">松風屋では、全国のお客様げの発送も行っております。<br>商品のご注文や、その他お問い合わせ等お待ちしております。</p>
-          <p class="contact-tell">TEL:023-631-3012<br>FAX:023-631-3013</p>
-          <p class="buttun"><a href="#" class="btn">ご注文・お問い合わせ</a></p>
-        </section>
-      </article>
+
+          <ul>
+            <li>2019-01-30</li>
+            <li class="td-bule"><a href="#">ラベル2</a></li>
+            <li>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</li>
+          </ul>
+
+          <ul>
+            <li>2019-01-30</li>
+            <li class="td-red"><a href="#">ラベル3</a></li>
+            <li>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</li>
+          </ul>
+          <ul>
+            <li>2019-01-30</li>
+            <li class="td-gray"><a href="#">ラベル1</a></li>
+            <li>ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</li>
+          </ul>
+          <ul>
+            <li>2019-01-30</li>
+            <li class="td-gray"><a href="#">ラベル1</a></li>
+            <li>ニュースニュースニュースニュースニュースニュースニュースニュースニュース</li>
+          </ul>
+        </div>
+        <p class="more">
+          <a href="#">more<img src="common/img/news-arrow.svg" alt=""></a>
+        </p>
+      </section>
+
+      <section class="price" id="price">
+        <h2>price</h2>
+        <div class="price-content">
+          <p>
+            <img src="common/img/thought.jpg" alt="">
+          </p>
+          <div class="table">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>column1</th>
+                  <th>column2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>row1</td>
+                  <td>100円</td>
+                  <td>100円</td>
+                </tr>
+                <tr>
+                  <td>row2</td>
+                  <td>6,000円</td>
+                  <td>0円</td>
+                </tr>
+                <tr>
+                  <td>row3</td>
+                  <td><span>6,000円</span><br>※今だけ半額</td>
+                  <td>0円</td>
+                </tr>
+                <tr>
+                  <td>row4</td>
+                  <td>100円</td>
+                  <td>100円</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>※ 目安なので詳しくは<span>お問い合わせ</span>ください。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="access" id="Access">
+        <h2>Access</h2>
+        <div class="access-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25853.22485007433!2d139.60506997148087!3d35.90651077909081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c143cc2c5285%3A0x280f665a32e5d413!2z5aSn5a6u6aeF!5e0!3m2!1sja!2sjp!4v1578323791317!5m2!1sja!2sjp"
+            width="800px" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="address">
+          <div class="address-ad-ad">
+            <p>住所</p>
+            <p>ほげほげほげのほげの場所</p>
+          </div>
+          <div class="address-ad">
+            <p>アクセス</p>
+            <p>〇〇駅から右に５分</p>
+          </div>
+        </div>
+        <p class="button"><a href="https://goo.gl/maps/XxZpLGyLFD645PL19">Googleマップで見る<i class="fab fa-adn"><img src="common/img/access-arrow.svg" alt=""></i></a></p>
+      </section>
+
+
+      <section class="contact" id="Contact">
+        <h2>Contact</h2>
+
+        <div class="contact-content">
+
+          <form action="" class="row" action="" method="post">
+            <table class="form-label">
+              <tr>
+                <th><label for="name" class="required">お名前<br><span>必須</span></label></th>
+                <td><input id="name" type="text" name="name" placeholder="山田太郎" class="box" required></td>
+              </tr>
+              <tr>
+                <th><label for="email" class="required-mail">メールアドレス<br><span>必須</span></label></th>
+                <td><input id="email" type="email" name="mail" placeholder="text@example.com" class="box" required></td>
+              </tr>
+              <tr>
+                <th><label for="select">お問い合わせ種別</label></th>
+                <td><select class="" name="" id="select" required>
+                    <option value="sample_1">---------</option>
+                    <option value="sample_2">サンプル１</option>
+                    <option value="sample_3">サンプル２</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="info">お問い合わせ内容</label></th>
+                <td><textarea id="info" name="coment" rows="8" cols="80" placeholder="お問い合わせ内容を入力してください"></textarea></td>
+              </tr>
+            </table>
+
+            <div class="contact-fome-radio">
+              <label for="radio1" class="radio">
+                <input id="radio1" type="radio" name="radio" value="radio1" checked>ラジオ１</label>
+
+              <label for="radio2" class="radio">
+                <input id="radio2" type="radio" name="radio" value="radio2">ラジオ2</label>
+
+              <label for="radio3" class="radio">
+                <input id="radio3" type="radio" name="radio" value="radio3">ラジオ3</label>
+            </div>
+
+            <div class="contact-fome-agreement">
+              <label for="agreement" class="checkbox_text">
+                <input id="agreement" type="checkbox" name="agreement" value="agreement" checked><span>プライバシーポリシー</span>に同意する
+              </label>
+            </div>
+            <div class="contact-fome-button">
+              <button type="submit" class="btn">
+                送信する<i class="fab fa-adn"><img src="common/img/access-arrow.svg" alt=""></i></button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
-    <aside>
-      <!-- 店舗情報 -->
-      　 <section class="information">
-        <h2>店舗情報</h2>
-        <div class="map-right">
-          <table>
-            <caption>株式会社松風屋</caption>
-            <tr>
-              <td valign="top">住所</td>
-              <td>〒990-0042<br>
-                山形県山形市七日町四丁目3−11</td>
-            </tr>
-            <tr>
-              <td valign="top">TEL/FAX</td>
-              <td>023-631-3012　023-631-3013</td>
-            </tr>
-            <td valign="top">営業時間</td>
-            <td>平日8:30~18:30 <br>
-              日曜日9:30~17:00</td>
-            </tr>
-            <tr>
-              <td>定休日</td>
-              <td>年中無休</td>
-            </tr>
-            <tr>
-          </table>
-          <div class="accessmap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12532.670705122458!2d140.343457!3d38.252417!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb31c5346c917a065!2z77yI5qCq77yJ5p2-6aKo5bGL!5e0!3m2!1sja!2sjp!4v1478838164746"
-              frameborder="0" style="border:0 "></iframe>
-          </div>
+    <footer class="footer ">
+      <div class="footer-content">
+        <div class="footer-address">
+          <p><img src="common/img/logo1.png" alt=""></p>
+          <p>住所：ほげほげのほげほげ</p>
+          <p>TEL：0000-00-0000</p>
         </div>
-        <p class="buttun">
-          <a href="#" class="btn">会社概要・店舗情報</a></p>
-      </section>
-      <section>
-        <div class="information-container">
-          <div class="information-address">
-            <p><img src="img/logo 2.png">
-            </p>
-            <h2>株式会社松風屋</h2>
-            <p>〒990-0042 山形県山形市七日町四丁目3−11</p>
-            <p>TEL:023-631-3012
-              FAX:023-631-3013</p>
-          </div>
-          <div class="information-address">
-            <div class="bottom-nav">
-              <ul>
-                <li><a href="#">トップページ</a></li>
-                <li><a href="#">松風屋のこだわり</a></li>
-                <li><a href="#">あんどーなつ</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">商品のご紹介</a></li>
-                <li><a href="">ご注文・お問い合わせ</a></li>
-                <li><a href="">店舗情報</a></li>
-              </ul>
-              <ul>
-                <li><a href="">会社概要</a></li>
-                <li><a href=""> Facebookページ</a></li>
-              </ul>
-            </div>
-            <div class="sns-icon">
-              <p><a href="#"><img src="img/btn_fb.png" alt=""></a></p>
-              <p><img src="img/btn_tw.png" alt=""></a></p>
-            </div>
-          </div>
+        <ul>
+          <li><a href="#Card">Card</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="#price">price</a></li>
+          <li><a href="#Access">Access</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+        <ul class="sns-box">
+          <li><a href=""><img src="common/img/facebook .svg" alt=""></a></li>
+          <li><a href=""><img src="common/img/instagram .svg" alt=""></a></li>
+          <li><a href=""><img src="common/img/twitter.svg" alt=""></a></li>
+        </ul>
+        <div class="sns-content">
+          <p>Twitter</p>
+          <p>facebook</p>
         </div>
-      </section>
-    </aside>
-    <footer>Copyright 株式会社松風屋 All right reserved.</footer>
-    <script src="js/jquery.min.js"></script>
-    <script>
-    $('#menu').on('click', function() {
-      $('.menu__line').toggleClass('active');
-      $('.gnav').fadeToggle();
-    });
-    </script>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2018 @haniwa008 All rights reserved.</p>
+        <p id="button"><a href="#"><span><img src="common/img/totop.svg" alt=" "></span></a></p>
+      </div>
+      <div class="footer-fixed">
+        <p><a href=""><img src="common/img/tel.svg" alt=""><br>電話</a></p>
+        <p><a href=""><img src="common/img/tel.svg" alt=""><br>お問い合わせ</a></p>
+        <p><a href=""><img src="common/img/tel.svg" alt=""><br>シェア</a></p>
+      </div>
+    </footer>
   </body>
+  <script src="common/js/jquery.js"></script>
+  <script src="common/js/index.js"></script>
 
 </html>

@@ -1,0 +1,19 @@
+@media (min-width: 600px) {
+  body {
+    background: pink; } }
+
+@media (min-width: 380px) {
+  body {
+    background: red; } }
+
+/* .body img{
+  @include tab {
+   width:550%;
+   height:auto;
+  }
+
+  @include  pc{
+   width:350px;
+   height:auto;
+  }
+} */

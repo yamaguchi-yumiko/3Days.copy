@@ -1,0 +1,489 @@
+//幅を定義
+$tab: 1023px;
+$sp: 600px; // min-width定義
+@mixin tab {
+  @media(max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media(max-width: ($sp)) {
+    @content;
+  }
+}
+//＠includeする事で、上記が適用される
+@include tab {
+  h1 {
+    width: 650px;
+    text-align: center;
+  }
+
+  .menu {
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    width: 30px;
+    z-index: 99;
+  }
+
+  .menu__line {
+    background: $color-text;
+    display: block;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .menu__line--center {
+    top: 9px;
+  }
+
+  .menu__line--bottom {
+    bottom: 0;
+  }
+
+  .header-nav {
+    position: fixed;
+    z-index: 10;
+  }
+
+  .header-nav,
+  .nav-list {
+    display: none;
+
+    P {
+      margin-right: 400px;
+
+      img {
+        width: auto;
+      }
+    }
+  }
+
+  .header .header-nav a::after {
+    width: 0;
+  }
+
+  #modal-open {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+
+  #modal-checkbox {
+    display: none;
+  }
+
+  #modal-open {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+
+  #modal-content {
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 40;
+    background: #fff;
+    transition: all 0.3s ease-in-out 0s;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.16);
+    padding: 1em;
+    text-align: center;
+
+    p {
+      margin: 10px auto 0;
+    }
+
+    a {
+      color: $color;
+      margin-top: 20px;
+    }
+  }
+
+  #modal-checkbox:checked ~ #modal-content {
+    opacity: 1;
+  }
+
+  #modal-close {
+    display: none;
+    position: fixed;
+    z-index: 39;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  #modal-checkbox:checked ~ #modal-close {
+    display: block;
+    opacity: 0.6;
+  }
+
+  #modal-content {
+    display: inherit;
+  }
+
+  /* price*/
+  .price-content {
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .table {
+      margin-top: 70px;
+      text-align: center;
+    }
+  }
+  /* news */
+  .news .contents {
+    width: 80%;
+  }
+
+  .news .contents ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .news .contents ul li:nth-child(3) {
+    margin-left: 120px;
+  }
+
+  /* contact */
+  .contact .contact-content form .box,
+  .contact .contact-content form select,
+  .contact .contact-content form textarea {
+    width: 100%;
+  }
+
+  form tr {
+    display: flex;
+    flex-direction: column;
+
+    th {
+      margin-left: 20px;
+      margin-bottom: 6px;
+    }
+  }
+
+  .contact .contact-content {
+    width: 80%;
+    height: 930px;
+    padding: 40px 50px 0 40px;
+  }
+
+  .contact .contact-content form .contact-fome-radio {
+    margin: 0 20px;
+  }
+
+  .contact .contact-content form table label span {
+    display: none;
+  }
+
+  form tr {
+    position: relative;
+  }
+
+  .contact .contact-content form table .required::after {
+    content: '必須';
+    position: absolute;
+    top: 0;
+    left: 80px;
+    padding: 0 10px;
+    background: $color-red;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 2px;
+    color: $color-text;
+  }
+
+  .contact .contact-content form table .required-mail::after {
+    content: '必須';
+    position: absolute;
+    top: 0;
+    left: 140px;
+    padding: 0 10px;
+    background: $color-red;
+    border-radius: 12px;
+    text-align: center;
+    padding-top: 2px;
+    color: $color-text;
+  }
+
+  .access .address {
+    margin: 0 0 37px 60px;
+  }
+
+  .copyright span,
+  .footer ul {
+    display: none;
+  }
+
+  .footer-content {
+    display: flex;
+  }
+
+  .sns-content {
+    display: flex;
+
+    p {
+      width: 180px;
+      height: 250px;
+      background-color: $color-light2;
+      margin: 30px 0 0 20px;
+      padding-top: 30%;
+      text-align: center;
+      box-shadow: 0 3px 6px #00000029;
+      transition: 0.3s ease 0s;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .footer .footer-address {
+    margin-top: 30px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .footer .footer-address img {
+    width: 150px;
+  }
+
+  .footer .copyright p {
+    margin-top: 30px;
+  }
+}
+@include sp {
+  body {
+    font-size: 14px;
+
+    h2 {
+      font-size: 40px;
+
+      &:before {
+        bottom: 10px;
+      }
+    }
+  }
+
+  h1 {
+    width: 400px;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+  }
+
+  .header .header-nav {
+    height: 70px;
+  }
+
+  .header-nav,
+  .nav-list {
+    display: none;
+
+    P {
+      margin-right: 210px;
+
+      img {
+        width: 150px;
+      }
+    }
+  }
+
+  .header .wrap {
+    height: 600px;
+
+    p {
+      font-size: 19px;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      width: 200px;
+      height: 50px;
+      padding-bottom: 6px;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .group {
+    margin-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .content:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .content:nth-child(even) {
+    margin-left: 0;
+  }
+  /* news*/
+  .news .contents {
+    margin-top: 40px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+
+  .contact .contact-content {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .contact .contact-content form .box,
+  .contact .contact-content form select,
+  .contact .contact-content form textarea {
+    width: 100%;
+  }
+
+  .contact .contact-content form .box,
+  .contact .contact-content form select {
+    height: 30px;
+  }
+
+  .contact .contact-content form label.radio {
+    margin-right: 20px;
+    padding-left: 22px;
+  }
+
+  .contact .contact-content form label.radio:before {
+    top: 1px;
+  }
+
+  .contact .contact-content form label.radio:after {
+    top: 5px;
+  }
+
+  .contact {
+    height: 1100px;
+  }
+
+  .contact .contact-content {
+    height: 800px;
+  }
+
+  .contact .contact-content form .contact-fome-agreement {
+    margin-left: 10px;
+  }
+
+  .contact .contact-content form .contact-fome-button {
+    margin-left: 40px;
+  }
+  /* price*/
+  .price .price-content {
+    margin-top: 60px;
+  }
+
+  .price .price-content img {
+    width: 250px;
+    height: auto;
+  }
+
+  .price .price-content table td:first-child {
+    width: 100px;
+  }
+
+  .price .price-content table th {
+    padding: 25px;
+  }
+  /* news */
+  .news .contents ul .td-bule,
+  .news .contents ul .td-gray,
+  .td-red {
+    padding-top: 5px;
+  }
+  /* Access*/
+  .access iframe {
+    margin-top: 60px;
+  }
+
+  .access .address {
+    margin: 40px 0 40px 50px;
+  }
+  /* contact */
+  .contact .contact-content {
+    padding: 30px 50px 30px 10px;
+  }
+
+  .access .button {
+    font-size: 14px;
+    width: 200px;
+    height: 50px;
+    padding-top: 15px;
+  }
+
+  .contact .contact-content form .btn {
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .fab {
+    vertical-align: sub;
+  }
+
+  .footer-address,
+  .sns-content {
+    display: none;
+  }
+
+  .footer .sns-box {
+    display: inherit;
+    margin-top: 165px;
+  }
+
+  .footer ul li {
+    margin-left: 16px;
+  }
+
+  .footer-fixed {
+    display: flex;
+    align-items: flex-end;
+
+    p {
+      width: 100%;
+      height: 70px;
+      background: $color-text;
+      text-align: center;
+      padding-top: 7px;
+
+      &:nth-child(2) {
+        border-left: 1px solid #AEAEAE;
+        border-right: 1px solid #AEAEAE;
+      }
+
+      a {
+        display: inline;
+        color: $color;
+      }
+    }
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer .copyright p {
+    margin: 30px 0 20px;
+  }
+}
